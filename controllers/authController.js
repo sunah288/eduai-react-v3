@@ -14,7 +14,7 @@ export const register = async (req, res) => {
   const newUser = new User({ email, password, username }); // ✅ 사용자 생성
   await newUser.save();
 
-  // ✅ JWT 토큰 발급
+  // ✅ JWT 토큰 발급 //
   const token = jwt.sign(
     { userId: newUser._id, email: newUser.email, role: newUser.role },              // payload
     process.env.JWT_SECRET,              // 비밀 키
