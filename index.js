@@ -4,7 +4,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-
+import adminRoutes from './routes/admin.js';
 import authRoutes from './routes/auth.js';
 import courseRoutes from './routes/courses.js';
 // import uploadRoutes from './routes/uploadRoutes.js';
