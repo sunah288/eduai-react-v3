@@ -7,6 +7,7 @@ import mongoose from 'mongoose';
 
 import authRoutes from './routes/auth.js';
 import courseRoutes from './routes/courses.js';
+// import uploadRoutes from './routes/uploadRoutes.js';
 
 dotenv.config();
 const whitelist = [
@@ -22,6 +23,10 @@ app.use(express.json());
 // 라우터 연결
 app.use('/api/auth', authRoutes);
 app.use('/api', courseRoutes); // /api/courses, /api/favorites
+
+// ✅추가 업로드 라우터 연결
+// app.use('/api', uploadRoutes);
+app.use('/api/admin', adminRoutes);
 
 // DB 연결 후 서버 실행
 mongoose.connect(process.env.MONGO_URI)
