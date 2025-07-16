@@ -1,8 +1,8 @@
 // server/routes/admin.js
 import express from 'express';
-import isAuth from '../middleware/authMiddleware.js';
-import isAdmin from '../middleware/isAdmin.js';
-import upload from '../middleware/cloudinaryUploader.js';
+import isAuth from '../middlewares/authMiddleware.js';
+import isAdmin from '../middlewares/isAdmin.js';
+import upload from '../middlewares/cloudinaryUploader.js';
 import { getDashboardStats, getAllUsers } from '../controllers/adminController.js';
 import { uploadImage, getImages } from '../controllers/adminController.js';
 
