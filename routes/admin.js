@@ -4,6 +4,7 @@ import isAuth from './authMiddleware.js';
 import isAdmin from '../middlewares/isAdmin.js';
 import upload from '../middleware/cloudinaryUploader.js';
 import { getDashboardStats, getAllUsers } from '../controllers/adminController.js';
+import { uploadImage, getImages } from '../controllers/adminController.js';
 
 const router = express.Router();
 
