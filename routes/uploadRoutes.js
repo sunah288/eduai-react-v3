@@ -1,6 +1,6 @@
 // server/routes/uploadRoutes.js
 import express from 'express';
-import upload from '../middleware/cloudinaryUploader.js';
+import upload from '../middlewareTemp/cloudinaryUploader.js';
 
 const router = express.Router();
 
