@@ -1,7 +1,7 @@
 // server/controllers/adminController.js
 import User from '../models/User.js';
 import Image from '../models/Image.js';
-// import cloudinary from '../config/cloudinary.js';
+import cloudinary from '../config/cloudinary.js';
 
 export const getDashboardStats = async (req, res) => {
   const userCount = await User.countDocuments();
