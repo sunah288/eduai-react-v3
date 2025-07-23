@@ -15,5 +15,5 @@ router.post('/upload-image', upload.single('file'), uploadImage);         // ✅
 router.get('/images', getImages);                  // ✅ ← 추가할 부분
 
 router.post('/delete-image', deleteImage); // ✅✅ ←  POST 요청으로 업로드 된 이미지 삭제
-
+// 확인
 export default router;
